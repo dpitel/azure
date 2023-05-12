@@ -15,6 +15,4 @@
           uses: actions/checkout@v2
 
         - name: Check Terraform Version
-          run: |
-          terraform version -json | jq -r '.terraform_version' > tf_version.txt
-          cat tf_version.txt
+          run: which --version
