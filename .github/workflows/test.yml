@@ -15,4 +15,4 @@
           uses: actions/checkout@v2
 
         - name: Check Terraform Version
-          run: which terraform
+          run: echo $(which terraform)
